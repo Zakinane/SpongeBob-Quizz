@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SpongeBob Quiz</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/Logo.png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="start-page">
+      <div class="start-image">
+        <h1>SpongeBob Quiz</h1>
+        <img src="img/1.png" width="500px" />
+        <button onclick="startQuiz()" class="start">Start the Game</button>
+      </div>
+    </div>
+
+    <div id="quiz-page" class="hidden">
+      <h1>Quiz</h1>
+      <form id="quiz-form">
+        <div class="question">
+          <img class="question-image" src="img/2.png" />
+          <p>1. What is SpongeBob's last name?</p>
+          <input type="radio" name="question1" value="SquarePants" />
+          SquarePants<br />
+          <input type="radio" name="question1" value="RoundPants" />
+          RoundPants<br />
+          <input type="radio" name="question1" value="TrianglePants" />
+          TrianglePants<br />
+        </div>
+        <br />
+        <div class="question">
+          <img class="question-image" src="img/3.png" />
+          <p>2. What is the name of SpongeBob's pet snail?</p>
+          <input type="radio" name="question2" value="Gary" /> Gary<br />
+          <input type="radio" name="question2" value="Larry" /> Larry<br />
+          <input type="radio" name="question2" value="Barry" /> Barry<br />
+        </div>
+        <br />
+        <div class="question">
+          <img class="question-image" src="img/4.png" />
+          <p>3. Who is SpongeBob's best friend?</p>
+          <input type="radio" name="question3" value="Patrick" /> Patrick<br />
+          <input type="radio" name="question3" value="Squidward" />
+          Squidward<br />
+          <input type="radio" name="question3" value="Sandy" /> Sandy<br />
+        </div>
+        <br />
+        <div class="question">
+          <img class="question-image" src="img/5.png" />
+          <p>
+            4. What is the name of the restaurant where <br />SpongeBob works?
+          </p>
+          <input type="radio" name="question4" value="Krusty Krab" /> Krusty
+          Krab<br />
+          <input type="radio" name="question4" value="Chum Bucket" /> Chum
+          Bucket<br />
+          <input type="radio" name="question4" value="Weenie Hut Jr." /> Weenie
+          Hut Jr.<br />
+        </div>
+        <br />
+        <div class="question">
+          <img class="question-image" src="img/6.png" />
+          <p>5. Who is the owner of the Krusty Krab?</p>
+          <input type="radio" name="question5" value="Mr. Krabs" /> Mr. Krabs<br />
+          <input type="radio" name="question5" value="Plankton" />
+          Plankton<br />
+          <input type="radio" name="question5" value="Sandy" /> Sandy<br />
+        </div>
+        <br />
+        <div class="question">
+          <img class="question-image" src="img/7.png" />
+          <p>
+            6. What is the name of SpongeBob's boating <br />school teacher?
+          </p>
+          <input type="radio" name="question6" value="Mrs. Puff" /> Mrs. Puff<br />
+          <input type="radio" name="question6" value="Mr. Puff" /> Mr. Puff<br />
+          <input type="radio" name="question6" value="Ms. Kelp" /> Ms. Kelp<br />
+        </div>
+        <br />
+        <div class="question">
+          <img class="question-image" src="img/8.png" />
+          <p>7. What is Plankton's first name?</p>
+          <input type="radio" name="question7" value="Sheldon" /> Sheldon<br />
+          <input type="radio" name="question7" value="Plank" /> Plank<br />
+          <input type="radio" name="question7" value="Bubble" /> Bubble<br />
+        </div>
+        <br />
+        <div class="question">
+          <img class="question-image" src="img/9.png" />
+          <p>8. What is the secret ingredient in a Krabby <br />Patty?</p>
+          <input type="radio" name="question8" value="Secret Sauce" /> Secret
+          Sauce<br />
+          <input type="radio" name="question8" value="Plankton" />
+          Plankton<br />
+          <input type="radio" name="question8" value="Love" /> Love<br />
+        </div>
+        <br />
+        <div class="question">
+          <img class="question-image" src="img/10.png" />
+          <p>9. What instrument does Squidward play?</p>
+          <input type="radio" name="question9" value="Clarinet" />
+          Clarinet<br />
+          <input type="radio" name="question9" value="Trumpet" /> Trumpet<br />
+          <input type="radio" name="question9" value="Piano" /> Piano<br />
+        </div>
+        <br />
+        <div class="question">
+          <img class="question-image" src="img/11.png" />
+          <p>10. Where does SpongeBob live?</p>
+          <input type="radio" name="question10" value="A Pineapple" /> A
+          Pineapple<br />
+          <input type="radio" name="question10" value="A Rock" /> A Rock<br />
+          <input type="radio" name="question10" value="A Boat" /> A Boat<br />
+        </div>
+        <button type="button" onclick="submitQuiz()">Submit</button>
+      </form>
+    </div>
+
+    <div id="score-page" class="hidden">
+      <h1>Your Score</h1>
+      <div class="score">
+        <img id="score-image" src="wistit" width="500px"/>
+        <p id="score-message"></p>
+        <div>
+          <button onclick="shareScore()">Share on Social Media</button>
+          <button onclick="restartQuiz()">Restart Quiz</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>

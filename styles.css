@@ -1,0 +1,82 @@
+@font-face {
+  font-family: "Kraby Patty";
+  src: url(assets/Krabby\ Patty.ttf);
+}
+* {
+  cursor: url("cursor/cursorPtr.png"), auto;
+}
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-image: url(img/fond.png);
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.start-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.start {
+  width: 150px;
+}
+.hidden {
+  display: none;
+}
+
+#start-page,
+#quiz-page,
+#score-page {
+  margin-top: 50px;
+}
+p {
+  font-size: larger;
+}
+h1 {
+  font-size: 100px;
+  font-weight: 100;
+  font-family: "Kraby Patty";
+}
+button {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px;
+  cursor: url("cursor/cursorHover.png"), auto;
+}
+
+button:hover {
+  background-color: #39c840;
+}
+#quiz-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+input {
+  cursor: url("cursor/cursorHover.png"), auto;
+}
+.question {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: aliceblue;
+  padding: 20px;
+  margin: 20px 0;
+}
+.question-image {
+  width: 400px;
+  height: 250px;
+}
+.score {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: aliceblue;
+  padding: 20px;
+  margin: 20px 0;
+}
