@@ -15,7 +15,7 @@ function submitQuiz() {
         question5: 'Mr. Krabs',
         question6: 'Mrs. Puff',
         question7: 'Sheldon',
-        question8: 'Secret Sauce',
+        question8: 'C̷̳̞̣̀ȓ̸̭̖͎͈̏à̶̢̂ḃ̸̡̝̪͙͛ ',
         question9: 'Clarinet',
         question10: 'A Pineapple'
     };
