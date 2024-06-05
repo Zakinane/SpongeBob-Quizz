@@ -2,11 +2,11 @@ function startQuiz() {
     document.getElementById('start-page').classList.add('hidden');
     document.getElementById('quiz-page').classList.remove('hidden');
 }
-
+let score = 0;
 function submitQuiz() {
     const quizForm = document.getElementById('quiz-form');
     const formData = new FormData(quizForm);
-    let score = 0;
+    
     const correctAnswers = {
         question1: 'SquarePants',
         question2: 'Gary',
@@ -15,7 +15,7 @@ function submitQuiz() {
         question5: 'Mr. Krabs',
         question6: 'Mrs. Puff',
         question7: 'Sheldon',
-        question8: 'C̷̳̞̣̀ȓ̸̭̖͎͈̏à̶̢̂ḃ̸̡̝̪͙͛ ',
+        question8: 'Crab',
         question9: 'Clarinet',
         question10: 'A Pineapple'
     };
@@ -47,8 +47,10 @@ function submitQuiz() {
 }
 
 function shareScore() {
-    const scoreMessage = document.getElementById('score-message').textContent;
-    const url = `https://twitter.com/intent/tweet?text=${encodeURIComponent(scoreMessage)}`;
+    const text = `I scored ${score}/10 at this SpongeBob Quiz! https://zakinane.github.io/SpongeBob-Quizz/`;
+    const url = `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}`;
+    console.log(url);
+
     window.open(url, '_blank');
 }
 
